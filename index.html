@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тік-так-то (Хрестики-Нулики)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Тік-так-то (Хрестики-Нулики)</h1>
+  
+  <!-- Вибір режиму гри -->
+  <div id="mode-selection">
+    <button onclick="setMode('player')">Гравець проти Гравця</button>
+    <button onclick="setMode('bot')">Гравець проти Бота</button>
+  </div>
+  
+  <div id="game">
+    <div class="cell" data-index="0"></div>
+    <div class="cell" data-index="1"></div>
+    <div class="cell" data-index="2"></div>
+    <div class="cell" data-index="3"></div>
+    <div class="cell" data-index="4"></div>
+    <div class="cell" data-index="5"></div>
+    <div class="cell" data-index="6"></div>
+    <div class="cell" data-index="7"></div>
+    <div class="cell" data-index="8"></div>
+  </div>
+  
+  <p id="message"></p>
+  <button onclick="resetGame()">Заново</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
